@@ -1,0 +1,108 @@
+export const NUMBER_OF_UNITS = 13;
+export const TILE_SIZE = 16;
+export const UNIT_SIZE = 32;
+export const WORLD_SIZE = NUMBER_OF_UNITS * UNIT_SIZE;
+
+export const Keys = {
+  UP: "ArrowUp",
+  RIGHT: "ArrowRight",
+  DOWN: "ArrowDown",
+  LEFT: "ArrowLeft",
+  SPACE: "Space",
+};
+
+export const Direction = {
+  UP: 0,
+  RIGHT: 3,
+  DOWN: 2,
+  LEFT: 1,
+};
+export const ObjectType = {
+  BASE: 0,
+  BRICK_WALL: 1,
+  STEEL_WALL: 2,
+  TREE: 3,
+  WATER: 4,
+  ICE: 5,
+};
+
+export const BASE_POSITION = [6 * UNIT_SIZE, 12 * UNIT_SIZE];
+export const BASE_WIDTH = UNIT_SIZE;
+export const BASE_HEIGHT = UNIT_SIZE;
+export const BASE_SPRITES = [
+  [11 * UNIT_SIZE, 7.5 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [12 * UNIT_SIZE, 7.5 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+];
+
+export const SHIP_WIDTH = UNIT_SIZE;
+export const SHIP_HEIGHT = UNIT_SIZE;
+export const SHIP_SPEED = 2;
+export const SHIP_TURN_GAP = 8;
+export const SHIP_ANIMATION_FRAME = 20;
+
+export const BULLET_WIDTH = 8;
+export const BULLET_HEIGHT = 8;
+export const BULLET_SPEED = 4;
+export const BULLET_SPRITES = [
+  [16 * UNIT_SIZE, 0, BULLET_WIDTH, BULLET_HEIGHT],
+  [17.5 * UNIT_SIZE, 0, BULLET_WIDTH, BULLET_HEIGHT],
+  [17 * UNIT_SIZE, 0, BULLET_WIDTH, BULLET_HEIGHT],
+  [16.5 * UNIT_SIZE, 0, BULLET_WIDTH, BULLET_HEIGHT],
+];
+
+export const BULLET_EXPLOSION_WIDTH = UNIT_SIZE;
+export const BULLET_EXPLOSION_HEIGHT = UNIT_SIZE;
+export const BULLET_EXPLOSION_SPEED = 4;
+export const BULLET_EXPLOSION_SPRITES = [
+  [16 * UNIT_SIZE, 2 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [17 * UNIT_SIZE, 2 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [18 * UNIT_SIZE, 2 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+];
+
+export const PLAYER1_SHIP_POSITION = [4 * UNIT_SIZE, 12 * UNIT_SIZE];
+export const PLAYER1_SHIP_SPRITES = [
+  [0 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [1 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [6 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [7 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [4 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [5 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [2 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  [3 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+];
+
+export const ENEMY_SHIP_SPEED = 1;
+export const ENEMY_SHIP_TURN_DELAY = 200;
+
+export const ENEMY_SHIP_START_POSITIONS = [
+  [6 * UNIT_SIZE, 0],
+  [0 * UNIT_SIZE, 0],
+  [12 * UNIT_SIZE, 0],
+];
+export const ENEMY_SHIP_SPRITES = [
+  [
+    [8 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [9 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [14 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [15 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [12 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [13 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [10 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+    [11 * UNIT_SIZE, 0 * UNIT_SIZE, UNIT_SIZE, UNIT_SIZE],
+  ],
+];
+
+export const METAL_WALL_SPRITES = [
+  [8 * UNIT_SIZE, 6.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // full
+  [9 * UNIT_SIZE, 6.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // right
+  [11 * UNIT_SIZE, 6.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // left
+  [10 * UNIT_SIZE, 6.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // bottom
+  [12 * UNIT_SIZE, 6.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // top
+];
+export const EFFECT_WALL_SPRITES = [
+  [17 * UNIT_SIZE, 4.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // full
+  [18 * UNIT_SIZE, 4.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // right
+  [0 * UNIT_SIZE, 4.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // bottom
+  [0 * UNIT_SIZE, 4.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // left
+  [0 * UNIT_SIZE, 4.5 * UNIT_SIZE, TILE_SIZE, TILE_SIZE], // top
+];
